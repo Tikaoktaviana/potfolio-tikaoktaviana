@@ -11,7 +11,7 @@ body{
     background-attachment: fixed;
     z-index: -1;
 }
-.container{
+.navbar-fixed{
  background-color:  #dd428d;
 }
 
