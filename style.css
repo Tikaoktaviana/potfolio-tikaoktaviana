@@ -1,44 +1,90 @@
-.navbar.sticky-top {
-    top: -100px;
-    transition: .5s;
-}
-
-.navbar .navbar-brand {
-    height: 75px;
-}
-
-.navbar .navbar-nav .nav-link {
-    margin-right: 30px;
-    padding: 25px 0;
-    color: var(--dark);
-    font-weight: 500;
-    outline: none;
-}
-
-/* top level */
-.navbar-nav > .dropdown:hover > .position-relative > .dropdown-menu {
-    top: 0;
-    right: 0;
-}
-
-/* sub levels */
-.navbar-nav .position-relative .position-relative .dropdown-menu {
-    top: 10px;
-    right: 50%;
-    margin-top: -1px;
-}
-
-.navbar-nav > .dropdown > .position-relative > .dropdown-menu,
-.navbar-nav .position-relative .dropdown > .position-relative > .dropdown-menu {
-    display: block;
-    opacity: 0;
-    visibility: hidden;
-    transition: .5s;
-}
-
-.navbar-nav > .dropdown:hover > .position-relative > .dropdown-menu,
-.navbar-nav .position-relative .dropdown:hover > .position-relative > .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transition: .5s;
-}
+body {
+    text-align: center;
+    margin: 0;
+  }
+  
+  .navbar-toggle {
+    background-color: #e78b90
+  }
+  
+  .pdL100 {
+    padding-left: 100px;
+  }
+  
+  .pdL50 {
+    padding-left: 50px;
+  }
+  
+  .pdR100 {
+    padding-right: 100px;
+  }
+  
+  .mgB20 {
+    margin-bottom: 20px;
+  }
+  
+  .navbar-nav {
+    float: right;
+  }
+  
+  .navbar-pink .navbar-nav>.active>a,
+  .navbar-pink .navbar-nav>.active>a:focus,
+  .navbar-pink .navbar-nav>.active>a:hover {
+    background-color: #e78b90;
+  }
+  
+  .navbar-pink {
+    background-color: #FFC0CB;
+  }
+  
+  .navbar-nav>li>a:hover {
+    background-color: #e78b90;
+  }
+  
+  .ui-introduce {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #F5F5F5;
+  }
+  
+  .ui-protfolio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #FFF0F5;
+  }
+  
+  .img-style {
+    width: 85%;
+  }
+  
+  .ui-contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #F5F5F5;
+  }
+  
+  .form-control {
+    height: 50px;
+    line-height: 2.0;
+    font-size: 20px;
+  }
+  
+  .btn-pink {
+    background-color: #FFC0CB;
+    color: #ffffff;
+  }
+  
+  .btn-pink:hover {
+    background-color: #e78b90;
+  }

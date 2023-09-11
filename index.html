@@ -4,56 +4,77 @@
     <link rel="stylesheet" href="script.js">
 </head>
 <body>
-      <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5">
-        <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <h2 class="m-0 text-primary">Navbar</h2>
-        </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-4 py-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Service</a>
-                <a href="roadmap.html" class="nav-item nav-link">Roadmap</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-displa="static">Level 1</a>
-                    <div class="position-relative">
-                        <div class="dropdown-menu shadow-sm m-0">
-                            <a href="feature.html" class="dropdown-item">Menu 1</a>
-                            <a href="token.html" class="dropdown-item">Menu 2</a>
-                            <a href="faq.html" class="dropdown-item">Menu 3</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Level 2</a>
-                                <div class="position-relative">
-                                    <div class="dropdown-menu shadow-sm m-0">
-                                        <a href="feature.html" class="dropdown-item">Menu 1</a>
-                                        <a href="token.html" class="dropdown-item">Menu 2</a>
-                                        <a href="faq.html" class="dropdown-item">Menu 3</a>
-                                        <div class="nav-item dropdown">
-                                            <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Level 3</a>
-                                            <div class="position-relative">
-                                                <div class="dropdown-menu shadow-sm m-0">
-                                                    <a href="feature.html" class="dropdown-item">Menu 1</a>
-                                                    <a href="token.html" class="dropdown-item">Menu 2</a>
-                                                    <a href="faq.html" class="dropdown-item">Menu 3</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
-            <div class="h-100 d-lg-inline-flex align-items-center d-none">
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i class="fab fa-linkedin-in"></i></a>
-            </div>
+    <nav class="navbar navbar-pink" role="navigation" style="position:fixed;width:100%;z-index:2">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                          <span class="sr-only">切换导航</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+            <a class="navbar-brand">XIANGQIAN</a>
+          </div>
+          <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#about">ABOUT</a></li>
+              <li><a href="#portfolio">PORTFOLIO</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
+      
+      <div class="ui-introduce" id="about">
+        <div class="row">
+          <div class="col-md-8 pdL100">
+            <h2 style="line-height:1.8">I'm now a college student studying software engineering in ECNU ,I want to be a front-end developer and I am studying online in FCC
+                      and be an intern in an company to help me to realize it.</h3>
+                  </div>
+                  <div class="col-md-4">
+                      <img style="width:50%;border-radius:50%" src="http://personalportfolio-1253580172.costj.myqcloud.com/psb.jpg">
+                  </div>
+              </div>
+          </div>
+      
+          
+      <div class="ui-protfolio" id="portfolio">
+        <h1 style="padding-bottom:30px;">PROTFOLIO</h1>
+        <div class="row">
+          <div class="col-md-6 mgB20">
+            <img class="img-style" src="http://personalportfolio-1253580172.costj.myqcloud.com/yuanlongping.png">
+          </div>
+          <div class="col-md-6 mgB20">
+            <img class="img-style" src="http://personalportfolio-1253580172.costj.myqcloud.com/yiban.png">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mgB20">
+            <img class="img-style" src="http://personalportfolio-1253580172.costj.myqcloud.com/steam.png">
+          </div>
+          <div class="col-md-6">
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="ui-contact" id="contact">
+        <h1 style="padding-bottom:30px;">CONTACT ME</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <form role="form" style="width:90%">
+              <div class="form-group">
+                <input type="text" class="form-control mgB20" placeholder="Name">
+                <input type="text" class="form-control mgB20" placeholder="Email Address">
+                <input type="text" class="form-control mgB20" placeholder="Phone Number">
+                <textarea class="form-control mgB20" rows="3" placeholder="Leave your message here"></textarea>
+                <button type="button" class="btn btn-pink btn-lg btn-block">Send</button>
+              </div>
+             </form>
+          </div>
+          <div class="col-md-6">
+            <h1>Want to get in touch with me? Just leave some message here! And I would like to make more friends! So just feel free to drop me a line at any time! I promise I will reply A.S.A.P!</h1>
+          </div>
+        </div>
+      </div>
     </body>
