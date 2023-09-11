@@ -19,7 +19,6 @@ function createScroller(fromId, toId) {
       $('.navbar-toggle').click();
   });
   });
-    
-    
+  
     
     
